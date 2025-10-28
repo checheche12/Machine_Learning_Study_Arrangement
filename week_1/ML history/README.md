@@ -16,7 +16,7 @@
 - 이 신경망의 문제는 비선형 문제를 풀지 못한다는 문제가 있습니다.
 - XOR Problem 이라고 하며, 이러한 문제를 풀지 못해서, AI 겨울을 맞이합니다.
 
-<img src="./ai겨울.png" width="200px" height="200px" title="Github_Logo"/>
+<img src="./ai겨울.png" width="600px" height="600px" title="Github_Logo"/>
 
 - 직선 하나로, 빨간 공과 파란 공이 분리되는 공간을 만들 수 없습니다. 이것이 xor problem 입니다.
 
@@ -71,7 +71,7 @@
  - 현재는 이 당시 22년 11월 30일에 나왔던 모델을 8B 모델들도 쉽게 추월하지만 이 당시 대중들에게 주었던 충격은 어마어마한 수준이였고
  - 그 당시 ChatGPT 의 가입자 수는 인터넷 역사상 유래없을 정도로 아주 빠르게 상승하였습니다.
 
- <img src="./가입속도.png" width="200px" height="200px" title="Github_Logo"/>
+ <img src="./가입속도.png" width="700px" height="500px" title="Github_Logo"/>
 
 
  
