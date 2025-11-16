@@ -23,7 +23,9 @@
  - branch를 새로 만들때는 `git branch {branch 이름}`
  - branch 이름을 바꿀 때는 `git branch -m {바꿀 이름}`
  - branch 이동은 `git checkout {branch 이름}` 으로 이동할 수 있고,
- - 새로운 branch를 만들면서 바로 이동하려고 할 때는 `git branch checkout -b {branch 이름}` 으로 만들면서 이동이 가능합니다.
+ - 새로운 branch를 만들면서 바로 이동하려고 할 때는 `git checkout -b {branch 이름}` 으로 만들면서 이동이 가능합니다.
+ - branch 이름은 보통 `feat or feature / 이슈번호 - {이슈 설명, 있을수도 있고 없을수도 있음}` 으로 이루어 져 있습니다.
+   - 예를 들어서 `feat/12`, `feature/32-login-sameuser_error` 와 같은 식 입니다.
 
 
 ### 변경 내용을 저장하고, 업로드 하기
@@ -31,6 +33,28 @@
  - `git add {변경된 파일}` 이 됩니다.
  - 여기서 `git add .` 을 하면, 내가 지금 있는 디렉토리부터, 모두 재귀적으로 추적하게 됩니다.
  - 그 다음 `git commit -m "[#{feature_번호}] 간단한 커밋 명"` 으로 commit 을 작성 한 뒤
- - git push {올릴 권한명} {올릴 branch 명} 으로 업로드 하면 됩니다.
+ - `git push {연동된 원격저장소 명} {올릴 branch 명}` 으로 업로드 하면 됩니다.
+   - ex) `git push origin feature/12`
+   - commit 메시지 안에 `[#번호]` 를 적으면 GitHub가 자동으로 해당 Issue와 연결해줍니다.
  - 위와 같이 업로드 하면
+ - <img src="./compare.png" width="300px" height="100px"/>
+ - 이렇게 compare 가 뜨고, 해당 버튼을 통해서, 원하는 곳으로 해당 branch 를 병합 할 수 있습니다.
+   - 이 compare 과정은, Pull Request (PR) 을 만들기 위한 단계입니다.
+   - PR은 내 Branch의 코드를 다른 Branch 로 넣고 싶다고 요청하는 단계입니다.
+   - 보통은 master (main) 에 넣지만, 간혹 엄브렐라 이슈의 경우, 다른 Branch 로 병합하는 경우도 있습니다.
+   - <img src="./compare_list.png" width="300px" height="100px"/>
+   - 위의 이미지에서 `base` 부분을 바꿈으로써, 다른 Branch 에도 병합 가능합니다.
+
+
+ ### git pull
+ - 코드가 다른 사람에 의해 변경되었거나, 다른 branch 등이 merge 되었다면, pull 을 통해서 코드를 받아올 수 있는데요
+ - `git pull` 을 통해 받아올 수 있습니다.
+ - `git pull {원격 저장소명} {branch 이름}` 으로 특정 branch 만 받아올 수도 있습니다.
+ - 동일 branch 의 변경 내역을 pull 하거나, 혹은 PR 할 때, 동일 부분을 수정했다면 git conflict (깃 충돌) 이 날 수 있는데
+ - 해당 현상에 대한 해결 방법과, 방지 방법, 어쩔 수 없을 때 어떻게 해결 해야 할지는 계속 git 을 실습하면서 배워 볼 것입니다.
+
+
+ ### 기본적인 내용이라
+ - 더 많은 기능은 주를 지나며 계속 배워보는 것으로 하고, 여기 위에서도 너무 간단하게 설명해서 그냥 넘어간 부분들이 많은데
+ - 그런 부분들은 하나하나 조금씩 메꿔 나가 보겠습니다.
 
