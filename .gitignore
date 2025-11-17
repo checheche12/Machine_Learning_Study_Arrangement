@@ -1,2 +1,5 @@
 machine_learning_venv
 data
+*.pth
+*.safetensor
+*.ckpt
