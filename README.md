@@ -25,21 +25,44 @@
 
 
 ### 목차
-1. 뉴런과 퍼셉트론
-2. 로지스틱 회귀
-3. SVM + SGD
-4. 인공지능의 겨울
-5. 멀티 퍼셉트론
-6. 멀티클래스 SVM
-7. SVM의 비선형으로의 확장
-8. 랜덤 포레스트
-9. 딥러닝 기본기
-10. CNN
-11. seq2seq
-12. RNN / LSTM / GRU
-13. Attention
-14. Transformer
-15. Diffusion
-16. Reinforcement Leraning
+ - week_1
+   - AIHub 와 HuggingFace 소개
+   - Data 구조 개론
+   - git 간단 설명 (진짜 당장 필요한 것만)
+   - ML의 역사 (간략하게)
+ 
+ - week_2
+   - git clone 하는 방법
+   - shell 이란?
+   - python 가상 환경
+   - vscode 와 jupyter
+   - python code, 자료구조 시각화
+   - Support Vector Machine
+   - Random Forest
+
+ - week_3
+   - 머신러닝이란 무엇인가?
+   - Neural Network
+   - Back Propagation 설명
+   - Activation과 Loss 함수
+   - Pytorch 기초
+   - Auto Encoder 와 Variational Auto Encoder
+   - Convolution Neural Network
+   - 강화학습이란 무엇인가
+   - GAN
+
+- week_4
+  - sequence to sequence 란 무엇인가?
+  - Text Embedding
+  - n-gram modeling
+  - LSTM과 그 친척들
+
+- week_5
+  - Transformer
+  - Diffusion
+
+- week_6
+  - VIT (Vision Transfromer)
+  - Text_Embedding Diffusion
 
 ### 이후 논문 서치 및 구현
