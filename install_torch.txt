@@ -1,0 +1,11 @@
+# select only one pytorch.
+# if you have cuda-gpu, please install gpu version
+# if not you have cuda-gpu, do not install gpu version
+
+# gpu version
+# copy and paste after poetry install in virtual enviroment
+pip install --index-url https://download.pytorch.org/whl/cu121 "torch==2.2.0+cu121", "torchvision==0.17.0+cu121", "torchaudio==2.2.0+cu121" --no-cache-dir
+
+# cpu version
+# copy and paste after poetry install in virtual enviroment
+pip install "torch==2.2.0", "torchvision==0.17.0", "torchaudio==2.2.0" --no-cache-dir
