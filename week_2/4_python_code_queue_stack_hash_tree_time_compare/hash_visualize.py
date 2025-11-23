@@ -4,7 +4,7 @@ import sys
 pygame.init()
 
 WIDTH, HEIGHT = 1600, 800
-TABLE_SIZE = 4
+TABLE_SIZE = 5
 
 def hash_func(x):
     return x % TABLE_SIZE
