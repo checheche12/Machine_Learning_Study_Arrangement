@@ -3,3 +3,8 @@ data
 *.pth
 *.safetensor
 *.ckpt
+kowikitext_dataset
+models
+spm
+ckpt
+*.pt
